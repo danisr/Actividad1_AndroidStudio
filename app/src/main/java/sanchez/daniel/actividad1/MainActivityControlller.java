@@ -22,13 +22,16 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
         if(view.getId() == vista.btnVolver.getId()) {//Detectar que boton ha sido presionado
             vista.btnVolver.setText("Cancelar");
             vista.btnEditar.setText("Guardar");
+
+        } else if (view.getId() == vista.btnEditar.getId()) {
             vista.txtNombre.setEnabled(true);
             vista.txtEmail.setEnabled(true);
         } else {
-            vista.txtNombre.setEnabled(false);
-            vista.txtEmail.setEnabled(false);
-        }
+                vista.txtNombre.setEnabled(false);
+                vista.txtEmail.setEnabled(false);
+            }
     }
+
 
     @Override
     public void onFocusChange(View view, boolean b) {
