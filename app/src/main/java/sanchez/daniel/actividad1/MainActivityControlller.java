@@ -26,13 +26,15 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
             Intent intent = new Intent(vista, SegundoActivity.class);
             vista.startActivity(intent);
         }
+        //Se guardan en variables todos los txt cuando se presiona el btn guardar
+        if (vista.btnEditar.getText() == "Guardar" && vista.btnEditar.isFocusable() == true) {
+            String nombre = vista.txtNombre.getText().toString();
+            String email = vista.txtEmail.getText().toString();
+            int telefono = Integer.parseInt(vista.txtTelefono.getText().toString());
+            String direccion = vista.txtDireccion.getText().toString();
+        }
+        
 
-        /*if (vista.btnEditar.getText() == "Guardar" && vista.btnEditar.isFocusable() == true) {
-            String nombre = vista.txtNombre.getText();
-            String email;
-            int telefono;
-            String direccion;
-        }*/
     }
 
     @Override

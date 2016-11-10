@@ -15,7 +15,7 @@ public class SegundoActivityController implements View.OnClickListener, View.OnF
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == vistaSegunda.btnPerfil.getId()) {//Detectar que boton ha sido presionado
+        if (view.getId() == vistaSegunda.btnPerfil.getId()) { //Detectar que boton ha sido presionado
             Intent intent = new Intent(vistaSegunda, MainActivity.class);
             vistaSegunda.startActivity(intent);
         }
