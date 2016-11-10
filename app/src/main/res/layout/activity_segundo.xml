@@ -9,4 +9,86 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="sanchez.daniel.actividad1.SegundoActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERFIL"
+            android:id="@+id/btnPerfil"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Título"
+            android:id="@+id/lblTitulo"
+            android:layout_below="@+id/btnPerfil"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitulo"
+            android:layout_below="@+id/lblTitulo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Texto"
+            android:id="@+id/lblTexto"
+            android:layout_below="@+id/txtTitulo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:id="@+id/scrollView2"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtTexto"
+                android:layout_gravity="center_horizontal" />
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anterior"
+                android:id="@+id/btnAnterior"
+                android:layout_weight="0.69" />
+
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                android:id="@+id/btnSiguiente" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>

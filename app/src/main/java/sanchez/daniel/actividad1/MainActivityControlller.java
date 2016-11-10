@@ -1,5 +1,6 @@
 package sanchez.daniel.actividad1;
 
+import android.content.Intent;
 import android.view.View;
 
 /**
@@ -13,25 +14,26 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
     }
 
     @Override
-    public void onClick(View view) {
-        //vista.txtHolaMundo.setText("HOLA MUNDO!!!");
-
-        /*Intent intent = new Intent(vista, SegundoActivity.class);
-        vista.startActivity(intent);*/
-
-        if(view.getId() == vista.btnVolver.getId()) {//Detectar que boton ha sido presionado
+    public void onClick(View bntPulsado) {
+        if (bntPulsado.getId() == R.id.btnEditar) {//Detectar que boton ha sido presionado
             vista.btnVolver.setText("Cancelar");
             vista.btnEditar.setText("Guardar");
-
-        } else if (view.getId() == vista.btnEditar.getId()) {
             vista.txtNombre.setEnabled(true);
             vista.txtEmail.setEnabled(true);
-        } else {
-                vista.txtNombre.setEnabled(false);
-                vista.txtEmail.setEnabled(false);
-            }
-    }
+            vista.txtTelefono.setEnabled(true);
+            vista.txtDireccion.setEnabled(true);
+        } else if (bntPulsado.getId() == R.id.btnVolver) {
+            Intent intent = new Intent(vista, SegundoActivity.class);
+            vista.startActivity(intent);
+        }
 
+        /*if (vista.btnEditar.getText() == "Guardar" && vista.btnEditar.isFocusable() == true) {
+            String nombre = vista.txtNombre.getText();
+            String email;
+            int telefono;
+            String direccion;
+        }*/
+    }
 
     @Override
     public void onFocusChange(View view, boolean b) {
