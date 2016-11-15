@@ -1,6 +1,5 @@
 package sanchez.daniel.actividad1;
 
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -13,18 +12,18 @@ public class MainActivity extends AppCompatActivity {
     public EditText txtEmail;
     public EditText txtTelefono;
     public EditText txtDireccion;
-    MainActivityControlller mainActivityControlller; //Comunicarse con el controller
+    MainActivityController mainActivityController; //Comunicarse con el controller
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { //Main
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); //Se conectan controlador con vista
-        mainActivityControlller = new MainActivityControlller(this);
+        mainActivityController = new MainActivityController(this);
 
         btnEditar=(Button)this.findViewById(R.id.btnEditar); //Crear instancia, encuentra vista a partir de su id
-        btnEditar.setOnClickListener(mainActivityControlller);
+        btnEditar.setOnClickListener(mainActivityController);
         btnVolver=(Button)this.findViewById(R.id.btnVolver);
-        btnVolver.setOnClickListener(mainActivityControlller);
+        btnVolver.setOnClickListener(mainActivityController);
         txtNombre=(EditText)this.findViewById(R.id.txtNombre);
         txtEmail=(EditText)this.findViewById(R.id.txtEmail);
         txtTelefono=(EditText)this.findViewById(R.id.txtTelefono);

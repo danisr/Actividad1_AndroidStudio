@@ -7,10 +7,10 @@ import android.widget.Toast;
 /**
  * Created by daniel.rodriguez on 08/11/2016.
  */
-public class MainActivityControlller implements View.OnClickListener, View.OnFocusChangeListener {//Para gestionar todos los eventos del MainActivity
+public class MainActivityController implements View.OnClickListener, View.OnFocusChangeListener {//Para gestionar todos los eventos del MainActivity
     MainActivity vista;//MainActivity
 
-    public MainActivityControlller(MainActivity vista) {//Constructor
+    public MainActivityController(MainActivity vista) {//Constructor
         this.vista = vista;//Pasar referencia a la Vista
     }
 
@@ -28,14 +28,12 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
             vista.startActivity(intent);
             vista.finish();//Mata la vista MainActivity
         }
-        //Se guardan en variables todos los txt cuando se presiona el btn guardar
-        if (bntPulsado.getId() == R.id.btnEditar && vista.btnEditar.getText() == "Guardar") {
+
+        if (bntPulsado.getId() == R.id.btnEditar && vista.btnEditar.getText() == "Guardar") { //Se guardan en variables todos los txt cuando se presiona el btn guardar
             DataHolder.sNombre = vista.txtNombre.getText().toString();
             DataHolder.sEmail = vista.txtEmail.getText().toString();
             DataHolder.sTelefono = vista.txtTelefono.getText().toString();
             DataHolder.sDireccion = vista.txtDireccion.getText().toString();
-            
-
         }
     }
 
@@ -43,7 +41,4 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
     public void onFocusChange(View view, boolean b) {
 
     }
-
-
-
 }

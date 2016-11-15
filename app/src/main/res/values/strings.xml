@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Actividad1</string>
+
+    // Para mostrar los titulos en SegundoActivityController
+    <string name="titulo1">Capitulo1</string>
+    <string name="titulo2">Capitulo2</string>
+    <string name="titulo3">Capitulo3</string>
+    <string name="titulo4">Capitulo4</string>
+
+    // Para mostrar los textos en SegundoActivityController
+    <string name="texto1">Texto del Capitulo 1</string>
+    <string name="texto2">Texto del Capitulo 2</string>
+    <string name="texto3">Texto del Capitulo 3</string>
+    <string name="texto4">Texto del Capitulo 4</string>
 </resources>
