@@ -1,1 +1,2 @@
+//include ':app', ':actividad2'
 include ':app'

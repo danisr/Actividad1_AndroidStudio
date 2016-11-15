@@ -1,6 +1,7 @@
 package sanchez.daniel.actividad1;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.view.View;
 
 /**
@@ -28,10 +29,10 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
         }
         //Se guardan en variables todos los txt cuando se presiona el btn guardar
         if (vista.btnEditar.getText() == "Guardar" && vista.btnEditar.isFocusable() == true) {
-            String nombre = vista.txtNombre.getText().toString();
-            String email = vista.txtEmail.getText().toString();
-            int telefono = Integer.parseInt(vista.txtTelefono.getText().toString());
-            String direccion = vista.txtDireccion.getText().toString();
+            DataHolder.sNombre = vista.txtNombre.getText().toString();
+            DataHolder.sEmail = vista.txtEmail.getText().toString();
+            DataHolder.iTelefono = Integer.parseInt(vista.txtTelefono.getText().toString());
+            DataHolder.sDireccion = vista.txtDireccion.getText().toString();
         }
         
 

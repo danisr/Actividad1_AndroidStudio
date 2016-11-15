@@ -29,4 +29,17 @@ public class MainActivity extends AppCompatActivity {
         txtTelefono=(EditText)this.findViewById(R.id.txtTelefono);
         txtDireccion=(EditText)this.findViewById(R.id.txtDireccion);
     }
+
+
+    /*protected void onPause() {
+        super.onPause();
+    }
+
+    protected void onResume() {
+        super.onResume();
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+    }*/
 }
