@@ -2,14 +2,135 @@
     <string name="app_name">Actividad1</string>
 
     // Para mostrar los titulos en SegundoActivityController
-    <string name="titulo1">Capitulo1</string>
-    <string name="titulo2">Capitulo2</string>
-    <string name="titulo3">Capitulo3</string>
-    <string name="titulo4">Capitulo4</string>
+    <string name="titulo1">LA CAÍDA DEL GOBERNADOR - pág-1</string>
+    <string name="titulo2">LA CAÍDA DEL GOBERNADOR - pág-2</string>
+    <string name="titulo3">LA CAÍDA DEL GOBERNADOR - pág-3</string>
+    <string name="titulo4">LA CAÍDA DEL GOBERNADOR - pág-4</string>
 
     // Para mostrar los textos en SegundoActivityController
-    <string name="texto1">Texto del Capitulo 1</string>
-    <string name="texto2">Texto del Capitulo 2</string>
-    <string name="texto3">Texto del Capitulo 3</string>
-    <string name="texto4">Texto del Capitulo 4</string>
+    <string name="texto1">Retorciéndose de dolor en el suelo, Bruce Allan Cooper jadea, parpadea
+e intenta recuperar el aliento. Puede oír los gruñidos primitivos,
+como balbuceos, del puñado de mordedores que vienen a por él en
+busca de alimento. Una voz en su cabeza le grita: «¡Muévete, imbécil
+de mierda! ¡Cobarde! Pero ¡¿qué haces?!»
+Bruce, un afroamericano enorme con la constitución de un alero
+de la NBA, con la cabeza en forma de misil, afeitada y una sombra de
+perilla, y rueda por el suelo accidentado, evitando por los pelos las
+garras grises y las fauces hambrientas de una mordedora adulta a la
+que le falta media cara.
+Consigue protegerse mientras recorre un metro y medio o casi
+dos, hasta que siente una punzada de dolor en el costado que le
+incendia las costillas y se apodera de él, dejándolo paralizado en
+plena agonía. Cae de espaldas, aferrándose todavía a su hacha de
+incendios oxidada, cuya cabeza está cubierta de sangre, pelo humano,
+y la bilis viscosa y negra que los supervivientes llaman «mierda
+de caminante».
+Bruce se siente desorientado durante unos instantes, le pitan los
+oídos y se le ha empezado a cerrar un ojo por la hinchazón de la
+nariz rota. Lleva el uniforme del ejército hecho polvo y las botas
+militares embarradas de la milicia no oficial de Woodbury. Sobre él
+se extiende el cielo de Georgia, un toldo bajo de nubes de un color </string>
+    <string name="texto2">gris similar al del agua sucia, inclemente y desagradable para ser
+abril, que se burla del hombre cuando éste lo mira: «Mira, niñato,
+ahí abajo no eres más que un bicho, un gusano en el cadáver de una
+tierra moribunda, un parásito que se alimenta de las sobras y las
+ruinas de una raza al borde la extinción.»
+De repente, tres rostros desconocidos eclipsan la visión del cielo
+sobre su cabeza, como si fueran planetas oscuros que, poco a poco,
+bloquean el firmamento, y todos gruñen estúpidamente como si estuvieran
+borrachos, con los ojos lechosos abiertos para la eternidad.
+De la boca de uno de ellos, un hombre obeso vestido con una bata de
+hospital manchada, gotea una sustancia viscosa y negra que cae sobre
+la mejilla de Bruce.
+—¡Me cago en la putaaaaaaa!
+Bruce sale de repente de su estupor con un arranque de fuerza inesperada
+y se abre paso a hachazos. El filo traza un arco hacia arriba y
+empala al mordedor gordo a través del tejido blando que tiene bajo la
+mandíbula. La mitad inferior de la cara se le cae y una falange fibrosa
+de carne muerta y cartílago brillante asciende seis metros girando por
+los aires, antes de estamparse contra el suelo con un ruido sordo.
+Rodando otra vez y volviendo a ponerse de pie como puede, el
+hombre ejecuta un giro de 180 grados —con gran agilidad, teniendo
+en cuenta su corpulencia y el terrible dolor al que está sometido— y
+le rebana los músculos podridos del cuello a la otra mordedora que
+va a por él. La cabeza se le cae hacia un lado, colgando por un instante
+de las hebras de tejido reseco que la unen al cuerpo, antes de que
+éstas se rompan y la cabeza se desplome en el suelo.
+El cráneo rueda unos cuantos centímetros dejando un rastro negruzco
+y sanguinolento mientras que, durante un momento insoportable,
+el cuerpo permanece en pie con los brazos inertes extendidos,
+impulsados por su espeluznante instinto. Hay algo metálico enrollado
+a los pies de la criatura, que acaba sucumbiendo a la gravedad.
+Es entonces cuando Bruce oye, amortiguado por culpa de sus maltrechos
+oídos, el último sonido que esperaría escuchar tras la masacre:
+el entrechocar de unos platillos. Al menos, eso es lo que consigue
+identificar entre los pitidos que no le abandonan: un ruido metálico </string>
+    <string name="texto3">palpitante en el cerebro que proviene de cerca. Retrocediendo con el
+arma en mano y preguntándose qué será el sonido, parpadea e intenta
+concentrarse en los otros mordedores que se le acercan arrastrando los
+pies. Son demasiados para enfrentarse a ellos con el hacha.
+Bruce se da la vuelta para huir y, de repente, choca de lleno con
+alguien que le corta el paso.
+—¡Eh!
+Ese alguien, un hombre caucásico de cuello grueso, con un cuerpo
+en forma de boca de incendios y el pelo rubio cortado al estilo
+militar, profiere un grito de guerra y ataca a Bruce con una maza del
+tamaño de una pata de caballo. La especie de porra con púas pasa
+silbando a pocos centímetros de su nariz rota y, en un acto reflejo,
+retrocede y se tropieza con sus propios pies.
+Cae al suelo de forma ridícula y el impacto levanta una nube de
+polvo, además de causar más ruido de platillos en la brumosa media
+distancia. El hacha sale volando. El hombre del pelo del color de la
+arena aprovecha la confusión para abalanzarse sobre Bruce con la maza
+lista para entrar en acción. Él gruñe y se aparta de su alcance rodando
+en el último momento.
+La cabeza de la maza golpea el suelo con fuerza, clavándose a pocos
+centímetros de la cabeza de Bruce, quien rueda para alcanzar su
+arma, que ha caído a tres metros de él y yace en el polvo rojo. Coge
+el hacha por el mango y, de pronto, una figura emerge de la niebla,
+justo a la izquierda de Bruce, que se aparta bruscamente del mordedor
+que repta hacia él con los movimientos lánguidos de un lagarto
+gigante. Un líquido negro rezuma de la boca fláccida de la mujer, que
+deja ver sus pequeños dientes y chasquea la mandíbula con la misma
+fuerza que un reptil.
+Entonces, pasa algo que devuelve a Bruce a la realidad.
+La cadena que mantiene cautiva a la muerta emite un sonido metálico
+cuando el monstruo la fuerza al límite. Bruce exhala un suspiro
+instintivo de alivio, mientras que la muerta se agita a pocos
+centímetros, intentando alcanzarle sin conseguirlo. La mordedora
+emite gruñidos de frustración primitivos, pero la cadena la mantiene
+a raya. A Bruce le entran ganas de hundirle los ojos con sus propias</string>
+    <string name="texto4">manos y de desgarrarle a bocados el cuello a ese maldito pedazo de
+carne podrida.
+Bruce vuelve a escuchar ese extraño sonido, como de platillos entrechocando,
+y también oye la voz del otro hombre, apenas perceptible
+entre el ruido:
+—Va, tío, levanta… Levanta.
+Bruce reacciona, se activa, coge el hacha y se pone de pie con
+cierta dificultad. Se oye el sonido de más platillos… mientras él se da
+la vuelta y le propina un hachazo al otro tipo.
+El filo no le acierta en la garganta a Corte Militar por los pelos,
+pero le rebana el cuello alto del suéter, dejándole una raja de quince
+centímetros.
+—Bueno —masculla Bruce por lo bajo mientras rodea al hombre—.
+¿Te ha parecido divertido?
+—Así me gusta —murmura el hombre corpulento, que se llama
+Gabriel Harris (o Gabe para los colegas), mientras vuelve a empuñar
+la maza, que pasa silbando cerca de la cara hinchada de Bruce.
+—¿No sabes hacerlo mejor? —farfulla Bruce, apartándose justo a
+tiempo y rodeándolo en el sentido contrario. Arremete contra él con
+el hacha. Gabe le bloquea con la porra y, alrededor de los dos contrincantes,
+los monstruos siguen profiriendo sus gruñidos y balbuceantes
+aullidos, forcejeando con las cadenas, hambrientos de carne
+humana, frenéticos por la avidez.
+Cuando se disipa la neblina polvorienta de la periferia del campo
+de batalla, aparecen los restos de un circuito de carreras al aire libre.
+La Pista de Carreras de los Veteranos de Woodbury es tan grande
+como un campo de fútbol americano, está protegida con tela metálica
+y rodeada de reliquias: fosos antiguos y pasillos oscuros y cavernosos.
+Tras la malla de metal se alza en pendiente una red de asientos sostenida
+por unos soportes ligeros y oxidados. En estos momentos, el lugar
+está inundado por los gritos de ánimo de los habitantes de
+Woodbury. Los platillos son, en realidad, los aplausos y vítores enfervorecidos
+de la multitud.</string>
 </resources>

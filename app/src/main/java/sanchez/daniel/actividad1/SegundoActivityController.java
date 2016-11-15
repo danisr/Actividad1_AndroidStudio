@@ -16,17 +16,19 @@ public class SegundoActivityController implements View.OnClickListener, View.OnF
         this.vistaSegunda = vistaSegunda;
         //String tit1 = vistaSegunda.getResources().getString(R.string.titulo1); // Para guardar en una variable en vez de en array
         titulos = new String[] {
-            vistaSegunda.getResources().getString(R.string.titulo1),
-            vistaSegunda.getResources().getString(R.string.titulo2),
-            vistaSegunda.getResources().getString(R.string.titulo3),
-            vistaSegunda.getResources().getString(R.string.titulo4)
+                vistaSegunda.getResources().getString(R.string.titulo1),
+                vistaSegunda.getResources().getString(R.string.titulo2),
+                vistaSegunda.getResources().getString(R.string.titulo3),
+                vistaSegunda.getResources().getString(R.string.titulo4)
         };
         textos = new String[] {
-            vistaSegunda.getResources().getString(R.string.texto1),
-            vistaSegunda.getResources().getString(R.string.texto2),
-            vistaSegunda.getResources().getString(R.string.texto3),
-            vistaSegunda.getResources().getString(R.string.texto4),
+                vistaSegunda.getResources().getString(R.string.texto1),
+                vistaSegunda.getResources().getString(R.string.texto2),
+                vistaSegunda.getResources().getString(R.string.texto3),
+                vistaSegunda.getResources().getString(R.string.texto4)
         };
+         vistaSegunda.txtTitulo.setText(titulos[i]);
+         vistaSegunda.txtTexto.setText(textos[i]);
     }
 
     @Override
@@ -36,19 +38,20 @@ public class SegundoActivityController implements View.OnClickListener, View.OnF
             vistaSegunda.startActivity(intent);
             vistaSegunda.finish(); //Mata la vista SegundoActivity
         } else if (view.getId() == vistaSegunda.btnSiguiente.getId()) { // botón Siguiente
-            vistaSegunda.txtTitulo.setText(titulos[i]);
-            vistaSegunda.txtTexto.setText(textos[i]);
             i++;
             if (i == titulos.length) {
                 i = 0;
             }
-        } else if (view.getId() == vistaSegunda.btnAnterior.getId()) { // botón Anterior
             vistaSegunda.txtTitulo.setText(titulos[i]);
             vistaSegunda.txtTexto.setText(textos[i]);
-            if (i == 0) {
-                i = titulos.length;
-            }
+
+        } else if (view.getId() == vistaSegunda.btnAnterior.getId()) { // botón Anterior
             i--;
+            if (i == -1) {
+                i = titulos.length - 1;
+            }
+            vistaSegunda.txtTitulo.setText(titulos[i]);
+            vistaSegunda.txtTexto.setText(textos[i]);
         }
     }
 

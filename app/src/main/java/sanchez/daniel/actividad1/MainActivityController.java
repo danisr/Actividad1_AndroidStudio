@@ -39,6 +39,5 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
 
     @Override
     public void onFocusChange(View view, boolean b) {
-
     }
 }

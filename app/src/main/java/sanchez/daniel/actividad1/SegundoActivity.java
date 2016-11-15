@@ -17,15 +17,15 @@ public class SegundoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segundo);
-        segundoActivityController = new SegundoActivityController(this);
 
         btnPerfil=(Button)this.findViewById(R.id.btnPerfil); //Crear instancia, encuentra vista a partir de su id
-        btnPerfil.setOnClickListener(segundoActivityController);
         btnAnterior=(Button)this.findViewById(R.id.btnAnterior);
-        btnAnterior.setOnClickListener(segundoActivityController);
         btnSiguiente=(Button)this.findViewById(R.id.btnSiguiente);
-        btnSiguiente.setOnClickListener(segundoActivityController);
         txtTitulo=(EditText)this.findViewById(R.id.txtTitulo);
         txtTexto=(EditText)this.findViewById(R.id.txtTexto);
+        segundoActivityController = new SegundoActivityController(this); //Se crea aquí xq en el constructor del controller se usan txtTitulo y txtTexto
+        btnPerfil.setOnClickListener(segundoActivityController); // Los Listener tienen que estar después del new del controlador
+        btnSiguiente.setOnClickListener(segundoActivityController);
+        btnAnterior.setOnClickListener(segundoActivityController);
     }
 }
