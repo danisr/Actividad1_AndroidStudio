@@ -1,8 +1,8 @@
 package sanchez.daniel.actividad1;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by daniel.rodriguez on 08/11/2016.
@@ -26,20 +26,24 @@ public class MainActivityControlller implements View.OnClickListener, View.OnFoc
         } else if (bntPulsado.getId() == R.id.btnVolver) {
             Intent intent = new Intent(vista, SegundoActivity.class);
             vista.startActivity(intent);
+            vista.finish();//Mata la vista MainActivity
         }
         //Se guardan en variables todos los txt cuando se presiona el btn guardar
-        if (vista.btnEditar.getText() == "Guardar" && vista.btnEditar.isFocusable() == true) {
+        if (bntPulsado.getId() == R.id.btnEditar && vista.btnEditar.getText() == "Guardar") {
             DataHolder.sNombre = vista.txtNombre.getText().toString();
             DataHolder.sEmail = vista.txtEmail.getText().toString();
-            DataHolder.iTelefono = Integer.parseInt(vista.txtTelefono.getText().toString());
+            DataHolder.sTelefono = vista.txtTelefono.getText().toString();
             DataHolder.sDireccion = vista.txtDireccion.getText().toString();
-        }
-        
+            
 
+        }
     }
 
     @Override
     public void onFocusChange(View view, boolean b) {
 
     }
+
+
+
 }

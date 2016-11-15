@@ -9,7 +9,6 @@ import android.view.View;
  */
 public class SegundoActivityController implements View.OnClickListener, View.OnFocusChangeListener {
     SegundoActivity vistaSegunda;
-    MainActivity vista;
 
     public SegundoActivityController (SegundoActivity vistaSegunda) { //Constructor
         this.vistaSegunda = vistaSegunda;
@@ -20,9 +19,7 @@ public class SegundoActivityController implements View.OnClickListener, View.OnF
         if (view.getId() == vistaSegunda.btnPerfil.getId()) { //Detectar que boton ha sido presionado
             Intent intent = new Intent(vistaSegunda, MainActivity.class);
             vistaSegunda.startActivity(intent);
-            //vista.txtNombre = DataHolder.sNombre;
-
-
+            vistaSegunda.finish(); //Mata la vista SegundoActivity
         }
     }
 

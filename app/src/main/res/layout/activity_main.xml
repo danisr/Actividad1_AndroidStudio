@@ -29,6 +29,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClicK_Toast"
                     android:text="VOLVER"
                     android:id="@+id/btnVolver"
                     android:layout_alignTop="@+id/scrollView"
