@@ -1,2 +1,3 @@
-//include ':app', ':actividad2'
-include ':app'
+include ':app', ':actividad2'
+//include ':app'
+//include ':actividad2'
