@@ -12,6 +12,7 @@ public class MainActivity2 extends AppCompatActivity {
     public long tFuera;
     public String sTDentro;
     public String sTFuera;
+    public boolean primeraVez;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,24 +21,23 @@ public class MainActivity2 extends AppCompatActivity {
         txtTApp=(EditText)this.findViewById(R.id.txtTApp); // Inicializar los txt
         txtTFueraApp=(EditText)this.findViewById(R.id.txtTFueraApp);
 
-        txtTApp.setText("0");
-        txtTFueraApp.setText("0");
-
         tArranque = System.currentTimeMillis(); // Tiempo Arranque de la Aplicación
     }
 
     protected void onPause() {
         super.onPause();
+        primeraVez = true; // Una vez que pasa por aquí ponemos el boolean a true, para que la 1ª vez que se abre la app no calcule el tDentro menos el tArranque
         tDentro = System.currentTimeMillis(); // Tiempo Dentro de la Aplicación
     }
 
     protected void onResume() {
         super.onResume();
-        tFuera = System.currentTimeMillis(); // Tiempo Fuera de la Aplicación
-
-        sTDentro =  tDentro - tArranque + "";
-        sTFuera = tFuera - tDentro + "";
-        txtTApp.setText((tDentro - tArranque) / 1000 + "," + sTDentro.substring(2) + " segundos");
-        txtTFueraApp.setText((tFuera - tDentro) / 1000 + "," + sTFuera.substring(2) + " segundos");
+        if(primeraVez) { //Si ya ha pasado por el onPause() hacemos los calculos de los tiempos
+            tFuera = System.currentTimeMillis(); // Tiempo Fuera de la Aplicación
+            sTDentro = tDentro - tArranque + "";
+            sTFuera = tFuera - tDentro + "";
+            txtTApp.setText((tDentro - tArranque) / 1000 + "," + sTDentro.substring(2) + " segundos");
+            txtTFueraApp.setText((tFuera - tDentro) / 1000 + "," + sTFuera.substring(2) + " segundos");
+        }
     }
 }
